@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182A22" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0E1714" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="emeraldStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#087F5B" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.5" />
+    </linearGradient>
+
+    <radialGradient id="cardGlow" cx="80%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <rect x="0" y="0" width="600" height="500" fill="url(#cardGlow)" />
+
+  <!-- Background Decorative Grid Lines -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="500" />
+    <line x1="150" y1="0" x2="150" y2="500" />
+    <line x1="250" y1="0" x2="250" y2="500" />
+    <line x1="350" y1="0" x2="350" y2="500" />
+    <line x1="450" y1="0" x2="450" y2="500" />
+    <line x1="550" y1="0" x2="550" y2="500" />
+
+    <line x1="0" y1="80" x2="600" y2="80" />
+    <line x1="0" y1="180" x2="600" y2="180" />
+    <line x1="0" y1="280" x2="600" y2="280" />
+    <line x1="0" y1="380" x2="600" y2="380" />
+    <line x1="0" y1="480" x2="600" y2="480" />
+  </g>
+
+  <!-- Secondary Background Floating Badge (open.mp sync status) -->
+  <g transform="translate(60, 40)">
+    <rect width="240" height="70" rx="12" fill="#131C18" stroke="rgba(255,255,255,0.08)" />
+    <circle cx="30" cy="35" r="10" fill="#087F5B" fill-opacity="0.25" />
+    <circle cx="30" cy="35" r="4" fill="#10B981" />
+    <text x="52" y="30" fill="#9AA9A1" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="500" letter-spacing="1">NETWORK CORE</text>
+    <text x="52" y="49" fill="#F2F5F3" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="600">open.mp v1.2 Protocol</text>
+  </g>
+
+  <!-- Main Card: Roleplay Citizen Dossier / Passport -->
+  <g transform="translate(90, 130)">
+    <!-- Drop Shadow / Glow -->
+    <rect x="0" y="0" width="420" height="260" rx="16" fill="url(#cardGrad)" stroke="url(#emeraldStroke)" stroke-width="1.2" />
+
+    <!-- Top Bar -->
+    <rect x="0" y="0" width="420" height="48" rx="16" fill="#12201A" fill-opacity="0.6" />
+    <line x1="0" y1="48" x2="420" y2="48" stroke="rgba(255,255,255,0.06)" />
+
+    <!-- Card Brand & State -->
+    <circle cx="32" cy="24" r="8" fill="#10B981" fill-opacity="0.2" stroke="#10B981" stroke-width="1.5" />
+    <text x="48" y="28" fill="#F2F5F3" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">KUYLAND CITIZEN ID</text>
+    
+    <rect x="305" y="14" width="85" height="20" rx="10" fill="#087F5B" fill-opacity="0.2" stroke="#10B981" stroke-width="0.8" />
+    <text x="323" y="28" fill="#10B981" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600">VERIFIED</text>
+
+    <!-- Character Avatar Frame -->
+    <rect x="25" y="72" width="90" height="110" rx="8" fill="#0C1411" stroke="rgba(255,255,255,0.09)" />
+    <!-- Avatar Abstract Figure -->
+    <circle cx="70" cy="110" r="18" fill="#1A2A23" />
+    <path d="M42,162 C42,138 54,134 70,134 C86,134 98,138 98,162 Z" fill="#1A2A23" />
+    <circle cx="70" cy="110" r="12" fill="#10B981" fill-opacity="0.3" />
+
+    <!-- Details Columns -->
+    <g transform="translate(135, 75)">
+      <text x="0" y="12" fill="#9AA9A1" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" letter-spacing="0.8">NAMA LENGKAP</text>
+      <text x="0" y="30" fill="#F2F5F3" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="600">Ryder_Santana</text>
+
+      <text x="0" y="60" fill="#9AA9A1" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" letter-spacing="0.8">DOMISILI / PEKERJAAN</text>
+      <text x="0" y="78" fill="#F2F5F3" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="500">Idlewood • Mekanik Swasta</text>
+
+      <text x="0" y="108" fill="#9AA9A1" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" letter-spacing="0.8">STATUS KEWARGAAN</text>
+      <text x="0" y="126" fill="#10B981" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="600">Aktif &amp; Terdaftar</text>
+    </g>
+
+    <!-- Bottom Bar / Micro Data -->
+    <line x1="20" y1="210" x2="400" y2="210" stroke="rgba(255,255,255,0.06)" />
+    <text x="25" y="235" fill="#9AA9A1" font-family="monospace" font-size="11">SA-KYL // 248.88.192:7777</text>
+    <text x="290" y="235" fill="#9AA9A1" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11">LOS SANTOS, SA</text>
+  </g>
+
+  <!-- Floating Feature Micro-Badge Bottom Right -->
+  <g transform="translate(320, 395)">
+    <rect width="210" height="54" rx="10" fill="#101915" stroke="rgba(255,255,255,0.08)" />
+    <path d="M22,27 L28,33 L40,21" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="50" y="25" fill="#F2F5F3" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="600">Cross-Platform Sync</text>
+    <text x="50" y="41" fill="#9AA9A1" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10">PC &amp; Android Real-Time</text>
+  </g>
+</svg>
+

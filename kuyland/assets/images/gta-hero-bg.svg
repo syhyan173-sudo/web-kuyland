@@ -1,0 +1,384 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Night Sky Gradient -->
+    <linearGradient id="gangsterSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020504" />
+      <stop offset="30%" stop-color="#05140F" />
+      <stop offset="65%" stop-color="#09281E" />
+      <stop offset="85%" stop-color="#123E30" />
+      <stop offset="100%" stop-color="#0A1F17" />
+    </linearGradient>
+
+    <!-- City & Street Amber/Emerald Glow -->
+    <radialGradient id="hoodAmbient" cx="50%" cy="80%" r="70%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.38" />
+      <stop offset="35%" stop-color="#087F5B" stop-opacity="0.2" />
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#020504" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Police Chopper Searchlight Cone -->
+    <linearGradient id="searchlightBeam" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="30%" stop-color="#6EE7B7" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#10B981" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Streetlamp Warm Amber Glow -->
+    <radialGradient id="lampCone" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="1" />
+      <stop offset="30%" stop-color="#FBBF24" stop-opacity="0.6" />
+      <stop offset="65%" stop-color="#D97706" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#B45309" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Lowrider Headlight Beam -->
+    <linearGradient id="lowriderBeamL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#FDE047" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#FDE047" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Police Flasher Red & Blue -->
+    <radialGradient id="policeRed" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="1" />
+      <stop offset="50%" stop-color="#DC2626" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="policeBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="1" />
+      <stop offset="50%" stop-color="#2563EB" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Shading -->
+    <linearGradient id="roofShade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#11291F" />
+      <stop offset="100%" stop-color="#040907" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Canvas -->
+  <rect width="1920" height="1080" fill="url(#gangsterSky)" />
+
+  <!-- Stars -->
+  <g fill="#FFFFFF">
+    <circle cx="150" cy="70" r="1.5" opacity="0.8" />
+    <circle cx="340" cy="110" r="1" opacity="0.6" />
+    <circle cx="580" cy="60" r="1.6" opacity="0.9" />
+    <circle cx="820" cy="130" r="1.2" opacity="0.7" />
+    <circle cx="1120" cy="80" r="1.5" opacity="0.85" />
+    <circle cx="1380" cy="120" r="1" opacity="0.6" />
+    <circle cx="1620" cy="65" r="1.6" opacity="0.9" />
+    <circle cx="1810" cy="140" r="1.3" opacity="0.75" />
+  </g>
+
+  <!-- Distant Los Santos Downtown Highrise Silhouettes & Vinewood Ridge -->
+  <path d="M0,580 Q320,460 720,490 T1450,440 Q1700,420 1920,520 L1920,820 L0,820 Z" fill="#061510" opacity="0.85" />
+
+  <!-- Maze Bank Tower in the Distant City Fog -->
+  <g fill="#0B2018" opacity="0.85">
+    <rect x="910" y="280" width="130" height="420" rx="10" />
+    <rect x="930" y="230" width="90" height="55" rx="5" />
+    <line x1="975" y1="230" x2="975" y2="140" stroke="#10B981" stroke-width="4" />
+    <circle cx="975" cy="136" r="6" fill="#10B981" />
+    <circle cx="975" cy="136" r="18" fill="#10B981" opacity="0.4" />
+    <!-- Distant skyscraper windows -->
+    <rect x="930" y="320" width="8" height="6" fill="#10B981" opacity="0.8" />
+    <rect x="955" y="320" width="8" height="6" fill="#FEF08A" opacity="0.8" />
+    <rect x="985" y="320" width="8" height="6" fill="#10B981" opacity="0.8" />
+    <rect x="1010" y="320" width="8" height="6" fill="#FEF08A" opacity="0.8" />
+    <rect x="940" y="370" width="8" height="6" fill="#FEF08A" opacity="0.8" />
+    <rect x="975" y="370" width="8" height="6" fill="#10B981" opacity="0.8" />
+    <rect x="1000" y="370" width="8" height="6" fill="#FFFFFF" opacity="0.8" />
+  </g>
+
+  <!-- Police Helicopter with Sweeping Searchlight (LSPD Chopper) -->
+  <g transform="translate(1320, 160)">
+    <!-- Chopper Silhouette -->
+    <path d="M40,25 Q70,18 85,25 Q95,30 85,38 Q50,42 40,25 Z" fill="#020604" />
+    <ellipse cx="65" cy="28" rx="22" ry="10" fill="#020604" />
+    <!-- Cockpit glass tint -->
+    <path d="M72,24 Q82,26 80,32 Q72,32 70,26 Z" fill="#10B981" opacity="0.6" />
+    <!-- Tail boom & rotor -->
+    <line x1="40" y1="28" x2="-20" y2="22" stroke="#020604" stroke-width="3" />
+    <line x1="-20" y1="14" x2="-20" y2="28" stroke="#020604" stroke-width="2" />
+    <ellipse cx="-20" cy="14" rx="12" ry="2" fill="#020604" />
+    <!-- Main rotor blade -->
+    <line x1="65" y1="20" x2="65" y2="15" stroke="#020604" stroke-width="3" />
+    <ellipse cx="65" cy="14" rx="65" ry="3" fill="#081812" opacity="0.75" />
+    <!-- Skids -->
+    <line x1="50" y1="38" x2="50" y2="44" stroke="#020604" stroke-width="2" />
+    <line x1="75" y1="38" x2="75" y2="44" stroke="#020604" stroke-width="2" />
+    <line x1="42" y1="44" x2="85" y2="44" stroke="#020604" stroke-width="2.5" />
+    <!-- Searchlight source bulb -->
+    <circle cx="78" cy="38" r="4" fill="#FFFFFF" />
+    <!-- Massive Sweeping Searchlight Cone Down to Ground -->
+    <polygon points="78,38 -220,780 40,820" fill="url(#searchlightBeam)" />
+  </g>
+
+  <!-- Distant Police Cruiser on Freeway with Red/Blue Flasher Reflecting -->
+  <g transform="translate(740, 580)">
+    <rect x="0" y="10" width="70" height="18" rx="4" fill="#06120D" />
+    <rect x="15" y="0" width="35" height="12" rx="3" fill="#0A1E15" />
+    <circle cx="18" cy="28" r="5" fill="#020504" />
+    <circle cx="52" cy="28" r="5" fill="#020504" />
+    <!-- Flasher Bar -->
+    <circle cx="30" cy="-2" r="14" fill="url(#policeRed)" />
+    <circle cx="40" cy="-2" r="14" fill="url(#policeBlue)" />
+    <rect x="26" y="-3" width="7" height="4" fill="#EF4444" />
+    <rect x="37" y="-3" width="7" height="4" fill="#3B82F6" />
+  </g>
+
+  <!-- Ambient Street & Hood Glow -->
+  <rect x="0" y="450" width="1920" height="630" fill="url(#hoodAmbient)" />
+
+  <!-- ======================================================================
+       GROVE STREET / GANTON HOOD SUBURBAN HOUSES (Midground)
+       ====================================================================== -->
+  <!-- House 1 (Left Side Single-Story Hood Bungalow) -->
+  <g fill="url(#roofShade)" stroke="#020604" stroke-width="1.5" transform="translate(60, 560)">
+    <!-- Roof pitched -->
+    <polygon points="0,90 120,20 280,20 340,90" fill="#0A1F17" />
+    <!-- House body -->
+    <rect x="20" y="90" width="300" height="130" fill="#06140F" />
+    <!-- Porch roof -->
+    <polygon points="140,90 140,80 250,80 260,90" fill="#0D2B20" />
+    <rect x="150" y="90" width="6" height="70" fill="#0A1F17" />
+    <rect x="245" y="90" width="6" height="70" fill="#0A1F17" />
+    <!-- Window with warm interior light behind blinds -->
+    <rect x="45" y="110" width="65" height="50" rx="3" fill="#FEF08A" opacity="0.65" stroke="#020604" stroke-width="3" />
+    <line x1="77" y1="110" x2="77" y2="160" stroke="#020604" stroke-width="2" />
+    <line x1="45" y1="135" x2="110" y2="135" stroke="#020604" stroke-width="2" />
+    <!-- Front Door -->
+    <rect x="180" y="110" width="40" height="85" fill="#030806" />
+  </g>
+
+  <!-- House 2 (Right Side Ganton Style House) -->
+  <g fill="url(#roofShade)" stroke="#020604" stroke-width="1.5" transform="translate(1500, 540)">
+    <polygon points="0,110 140,30 320,30 380,110" fill="#0A1F17" />
+    <rect x="20" y="110" width="340" height="150" fill="#06140F" />
+    <!-- Lit Window -->
+    <rect x="220" y="130" width="75" height="55" rx="3" fill="#10B981" opacity="0.5" stroke="#020604" stroke-width="3" />
+    <line x1="257" y1="130" x2="257" y2="185" stroke="#020604" stroke-width="2" />
+    <line x1="220" y1="157" x2="295" y2="157" stroke="#020604" stroke-width="2" />
+  </g>
+
+  <!-- Chainlink Fence (Iconic Los Santos alley fence) -->
+  <g stroke="#10B981" stroke-opacity="0.25" stroke-width="1.2">
+    <pattern id="chainlink" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M0 8 L8 0 L16 8 L8 16 Z" fill="none" stroke="#10B981" stroke-width="0.8" stroke-opacity="0.3" />
+    </pattern>
+    <!-- Fence Left -->
+    <rect x="260" y="690" width="220" height="90" fill="url(#chainlink)" stroke="#040A07" stroke-width="2" />
+    <line x1="260" y1="690" x2="480" y2="690" stroke="#06140E" stroke-width="4" />
+    <line x1="330" y1="690" x2="330" y2="780" stroke="#06140E" stroke-width="4" />
+    <line x1="410" y1="690" x2="410" y2="780" stroke="#06140E" stroke-width="4" />
+  </g>
+
+  <!-- ======================================================================
+       BRICK WALL WITH STYLIZED GANGLAND GRAFFITI TAGS
+       ====================================================================== -->
+  <!-- Brick Wall (Left-Center) -->
+  <g transform="translate(180, 680)">
+    <rect x="0" y="0" width="340" height="150" rx="4" fill="#081A13" stroke="#020604" stroke-width="3" />
+    <!-- Brick course lines -->
+    <line x1="0" y1="30" x2="340" y2="30" stroke="#030A07" stroke-width="1.5" />
+    <line x1="0" y1="60" x2="340" y2="60" stroke="#030A07" stroke-width="1.5" />
+    <line x1="0" y1="90" x2="340" y2="90" stroke="#030A07" stroke-width="1.5" />
+    <line x1="0" y1="120" x2="340" y2="120" stroke="#030A07" stroke-width="1.5" />
+
+    <!-- Graffiti Tag 1: "GROVE ST 4 LIFE" (Old English / Street Spray Style) -->
+    <g transform="translate(25, 20)">
+      <text x="0" y="40" font-family="'Impact', 'Arial Black', sans-serif" font-size="34" font-weight="900" fill="#10B981" letter-spacing="3" stroke="#020604" stroke-width="4" paint-order="stroke fill">GROVE ST</text>
+      <text x="180" y="40" font-family="'Impact', 'Arial Black', sans-serif" font-size="24" font-weight="900" fill="#FEF08A" letter-spacing="2" stroke="#020604" stroke-width="3" paint-order="stroke fill">4-LIFE</text>
+      <!-- Tag underline with spray drip -->
+      <path d="M0,48 Q80,54 180,48 T280,50" fill="none" stroke="#10B981" stroke-width="4" stroke-linecap="round" />
+      <line x1="60" y1="52" x2="60" y2="64" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="140" y1="52" x2="140" y2="68" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="220" y1="52" x2="220" y2="62" stroke="#10B981" stroke-width="2" stroke-linecap="round" />
+    </g>
+
+    <!-- Graffiti Tag 2: "KUYLAND FAMILIES" -->
+    <g transform="translate(30, 85)">
+      <text x="0" y="32" font-family="'Impact', 'Arial Black', sans-serif" font-size="22" font-weight="900" fill="#F2F5F3" letter-spacing="2" stroke="#020604" stroke-width="3" paint-order="stroke fill">KUYLAND // FAMILIES</text>
+      <text x="210" y="32" font-family="monospace" font-size="14" font-weight="700" fill="#10B981">[LS-RP]</text>
+    </g>
+  </g>
+
+  <!-- ======================================================================
+       FOREGROUND: LOWRIDERS & GANGSTER SILHOUETTES
+       ====================================================================== -->
+  <!-- Street Asphalt & Curb -->
+  <path d="M0,820 L1920,800 L1920,1080 L0,1080 Z" fill="#030806" />
+  <!-- Center Double Yellow Street Lines -->
+  <path d="M0,910 Q960,880 1920,890" stroke="#FBBF24" stroke-width="3.5" stroke-dasharray="24 20" opacity="0.6" fill="none" />
+
+  <!-- Classic 1964 Lowrider 1 (Left - Front Hydralic Lift Stance) -->
+  <g transform="translate(560, 740)">
+    <!-- Lowrider Chassis & Body (Angled Hydraulic Stance) -->
+    <!-- Shadow under car -->
+    <ellipse cx="210" cy="115" rx="200" ry="25" fill="#000000" opacity="0.9" />
+
+    <!-- Car Body -->
+    <path d="M10,85 
+             L45,45 L110,40 L190,40 L280,60 L390,65 L415,80 L420,100 L380,105 
+             L340,105 L300,75 L260,75 L220,105 L80,105 L50,110 L10,100 Z" 
+          fill="#0B2319" stroke="#10B981" stroke-width="1.8" />
+
+    <!-- Chrome Side Trim Accent -->
+    <line x1="20" y1="82" x2="410" y2="78" stroke="#FFFFFF" stroke-width="2.5" opacity="0.8" />
+
+    <!-- Tinted Windshield & Windows -->
+    <polygon points="50,47 110,43 125,75 35,77" fill="#020604" stroke="#10B981" stroke-width="1.2" />
+    <polygon points="120,43 180,43 175,75 130,75" fill="#020604" stroke="#10B981" stroke-width="1.2" />
+
+    <!-- Front & Rear Bumpers -->
+    <rect x="5" y="85" width="16" height="15" rx="3" fill="#D1D5DB" />
+    <rect x="408" y="75" width="14" height="18" rx="3" fill="#D1D5DB" />
+
+    <!-- Custom Wire Wheels (Spokes) -->
+    <!-- Rear Wheel (Tucked Low in fender) -->
+    <g transform="translate(65, 95)">
+      <circle cx="22" cy="18" r="22" fill="#020504" />
+      <circle cx="22" cy="18" r="14" fill="#1F2937" stroke="#E5E7EB" stroke-width="2.5" />
+      <circle cx="22" cy="18" r="5" fill="#FBBF24" />
+    </g>
+
+    <!-- Front Wheel (Lifted on Hydraulics!) -->
+    <g transform="translate(340, 75)">
+      <circle cx="22" cy="22" r="24" fill="#020504" />
+      <circle cx="22" cy="22" r="15" fill="#1F2937" stroke="#E5E7EB" stroke-width="2.5" />
+      <circle cx="22" cy="22" r="5" fill="#FBBF24" />
+      <!-- Hydraulic Arm / Spring hint -->
+      <line x1="22" y1="-5" x2="22" y2="10" stroke="#9CA3AF" stroke-width="4" />
+    </g>
+
+    <!-- Headlight Beam (Blasting Forward into the night) -->
+    <polygon points="415,75 750,40 750,110 415,85" fill="url(#lowriderBeamL)" />
+    <circle cx="415" cy="80" r="7" fill="#FEF08A" />
+    <circle cx="415" cy="80" r="20" fill="url(#lampCone)" />
+
+    <!-- Red Taillight Glow -->
+    <circle cx="8" cy="88" r="6" fill="#EF4444" />
+    <circle cx="8" cy="88" r="18" fill="url(#policeRed)" />
+  </g>
+
+  <!-- Gangster Silhouettes (Homies standing on the block) -->
+  <!-- Homie 1: Baggy Flannel & Snapback Cap (Standing by lowrider) -->
+  <g fill="#020504" transform="translate(1020, 730)">
+    <!-- Snapback Cap with Flat Brim -->
+    <path d="M22,12 Q32,4 42,12 Q45,16 48,16 L56,16 L56,19 L42,19 Z" />
+    <!-- Bandana Knot at Back of Cap -->
+    <polygon points="20,16 12,20 22,22" fill="#10B981" />
+    <!-- Head / Jaw -->
+    <circle cx="32" cy="20" r="10" />
+    <!-- Gold Chain / Dogtags -->
+    <path d="M26,35 Q32,45 38,35" fill="none" stroke="#FBBF24" stroke-width="2" />
+    <!-- Baggy Flannel / Oversized Hood Hoodie -->
+    <path d="M12,32 L24,28 L40,28 L54,32 L58,75 L45,78 L44,115 L40,115 L38,82 L28,82 L26,115 L22,115 L20,78 L6,75 Z" />
+    <!-- Arms crossed / Hand gesture -->
+    <rect x="18" y="44" width="28" height="14" rx="4" />
+    <!-- Baggy Jeans -->
+    <path d="M20,110 L24,190 L31,190 L33,130 L35,190 L42,190 L44,110 Z" />
+    <!-- High-top Sneakers -->
+    <rect x="18" y="185" width="16" height="12" rx="3" fill="#FFFFFF" />
+    <rect x="33" y="185" width="16" height="12" rx="3" fill="#FFFFFF" />
+  </g>
+
+  <!-- Homie 2: Tall Gangster with Green Bandana Mask & Tank Top -->
+  <g fill="#020504" transform="translate(1085, 715)">
+    <!-- Green Bandana Mask covering nose/mouth -->
+    <polygon points="22,18 36,18 38,30 29,38 20,30" fill="#10B981" />
+    <!-- Head & Beanie -->
+    <ellipse cx="29" cy="14" rx="9" ry="11" />
+    <!-- Muscular Shoulders & Tank Top -->
+    <path d="M14,30 L22,26 L36,26 L44,30 L48,70 L40,74 L40,115 L36,115 L35,80 L23,80 L22,115 L18,115 L18,74 L10,70 Z" />
+    <!-- Muscular Bare Arms -->
+    <rect x="8" y="32" width="7" height="42" rx="3" />
+    <rect x="43" y="32" width="7" height="42" rx="3" />
+    <!-- Hands in pockets -->
+    <!-- Baggy Khaki Cargo Pants -->
+    <path d="M16,110 L18,205 L26,205 L28,135 L30,205 L38,205 L40,110 Z" />
+    <!-- Cortez / Classic Black Sneakers -->
+    <rect x="14" y="200" width="15" height="12" rx="3" fill="#10B981" />
+    <rect x="28" y="200" width="15" height="12" rx="3" fill="#10B981" />
+  </g>
+
+  <!-- Homie 3: Sitting on Hood Fence (Left) -->
+  <g fill="#020504" transform="translate(480, 710)">
+    <!-- Backward Snapback -->
+    <path d="M10,12 Q20,5 30,12 L35,16 L40,16 L40,19 L32,19 Z" />
+    <circle cx="20" cy="18" r="9" />
+    <!-- Slouching Torso -->
+    <path d="M8,28 L32,28 L36,65 L10,65 Z" />
+    <!-- Leg perched over wall -->
+    <path d="M12,65 L12,110 L22,110 L24,65 Z" />
+    <rect x="10" y="105" width="18" height="12" rx="3" fill="#FFFFFF" />
+  </g>
+
+  <!-- ======================================================================
+       TELEPHONE POLE WITH TANGLED WIRES & HANGING SNEAKERS
+       ====================================================================== -->
+  <!-- Wooden Telephone Pole (Right Foreground) -->
+  <g transform="translate(1420, 280)">
+    <!-- Main Timber Post -->
+    <rect x="35" y="0" width="16" height="800" fill="#040907" />
+    <!-- Crossarms -->
+    <rect x="-40" y="60" width="170" height="10" fill="#06120E" />
+    <rect x="-20" y="110" width="130" height="9" fill="#06120E" />
+    <!-- Crossarm Braces -->
+    <line x1="-30" y1="70" x2="35" y2="100" stroke="#040907" stroke-width="3" />
+    <line x1="120" y1="70" x2="50" y2="100" stroke="#040907" stroke-width="3" />
+    <!-- Ceramic Insulators -->
+    <rect x="-35" y="52" width="7" height="9" fill="#10B981" />
+    <rect x="0" y="52" width="7" height="9" fill="#10B981" />
+    <rect x="85" y="52" width="7" height="9" fill="#10B981" />
+    <rect x="120" y="52" width="7" height="9" fill="#10B981" />
+
+    <!-- Streetlamp Fixture on Pole (Casting cone onto street) -->
+    <path d="M40,140 Q40,90 100,85 L140,85" fill="none" stroke="#050F0B" stroke-width="6" />
+    <polygon points="135,83 145,83 150,92 130,92" fill="#13281E" />
+    <!-- Amber Cone of Light shining on homies and street -->
+    <polygon points="130,92 150,92 260,780 -60,780" fill="url(#hoodAmbient)" opacity="0.8" />
+    <circle cx="140" cy="90" r="50" fill="url(#lampCone)" />
+    <circle cx="140" cy="90" r="6" fill="#FFFFFF" />
+
+    <!-- Tangled Telephone Wires Crossing the Sky -->
+    <path d="M-1420,280 Q-600,320 0,65" fill="none" stroke="#030806" stroke-width="2.5" />
+    <path d="M-1420,320 Q-600,360 90,65" fill="none" stroke="#030806" stroke-width="2" />
+    <path d="M0,65 Q300,100 500,80" fill="none" stroke="#030806" stroke-width="2" />
+
+    <!-- ICONIC HOOD ELEMENT: Pair of Sneakers Hanging by Laces over the Powerline! -->
+    <g transform="translate(-480, 290)">
+      <!-- Sneaker 1 -->
+      <line x1="0" y1="0" x2="6" y2="28" stroke="#040A07" stroke-width="1.5" />
+      <polygon points="2,28 18,28 22,38 4,38" fill="#FFFFFF" stroke="#020504" stroke-width="1.5" />
+      <rect x="0" y="36" width="24" height="4" fill="#020504" />
+      <!-- Sneaker 2 -->
+      <line x1="0" y1="0" x2="-8" y2="34" stroke="#040A07" stroke-width="1.5" />
+      <polygon points="-12,34 4,34 8,44 -10,44" fill="#FFFFFF" stroke="#020504" stroke-width="1.5" />
+      <rect x="-14" y="42" width="24" height="4" fill="#020504" />
+    </g>
+  </g>
+
+  <!-- Iconic Los Santos Washingtonia Fan Palm Trees (Framing Left & Right) -->
+  <g fill="#020504">
+    <!-- Palm Left -->
+    <path d="M90,1080 Q98,720 120,440 Q127,436 131,440 Q112,720 102,1080 Z" />
+    <path d="M125,438 Q195,380 270,410 Q210,430 125,440 Z" />
+    <path d="M125,438 Q205,445 250,510 Q190,485 125,442 Z" />
+    <path d="M123,438 Q150,345 200,320 Q170,380 123,438 Z" />
+    <path d="M120,438 Q75,340 30,360 Q68,390 120,438 Z" />
+    <path d="M120,438 Q45,410 5,440 Q65,440 120,442 Z" />
+
+    <!-- Palm Right -->
+    <path d="M1840,1080 Q1828,740 1800,460 Q1807,456 1812,460 Q1838,740 1852,1080 Z" />
+    <path d="M1805,458 Q1735,400 1650,425 Q1720,445 1805,458 Z" />
+    <path d="M1805,458 Q1725,470 1675,535 Q1735,510 1805,460 Z" />
+    <path d="M1807,458 Q1780,360 1730,340 Q1758,400 1807,458 Z" />
+    <path d="M1810,458 Q1860,365 1910,380 Q1875,410 1810,458 Z" />
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<!-- Android Icon -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="4" y1="18" x2="4" y2="12"></line>
+  <line x1="20" y1="18" x2="20" y2="12"></line>
+  <rect x="7" y="10" width="10" height="12" rx="2"></rect>
+  <path d="M7 9a5 5 0 0 1 10 0"></path>
+  <circle cx="9" cy="6" r="0.75" fill="currentColor"></circle>
+  <circle cx="15" cy="6" r="0.75" fill="currentColor"></circle>
+  <line x1="8" y1="2" x2="10" y2="4"></line>
+  <line x1="16" y1="2" x2="14" y2="4"></line>
+</svg>
+

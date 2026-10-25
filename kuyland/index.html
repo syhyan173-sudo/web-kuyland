@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>KUYLAND — Official open.mp GTA San Andreas Multiplayer Server</title>
+  <meta name="description" content="Selamat datang di KUYLAND Roleplay. Komunitas GTA San Andreas Multiplayer modern bertenaga open.mp. Mainkan di PC dan Android sekarang.">
+  <meta name="keywords" content="GTA San Andreas, SA-MP, open.mp, GTA SA Android, Kuyland RP, Roleplay Indonesia, GTA SAMP PC, Kuyland Server">
+  <meta name="author" content="KUYLAND Development Team">
+
+  <!-- Open Graph / Meta Sosial -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kuyland.id/">
+  <meta property="og:title" content="KUYLAND — Official Game Server Website">
+  <meta property="og:description" content="Your Story. Your City. Your Rules. Server Roleplay GTA San Andreas Multiplayer modern berteknologi open.mp.">
+  <meta property="og:image" content="assets/images/gta-hero-bg.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23087F5B'/><polygon points='16,7 23,23 9,23' fill='%2310B981'/></svg>">
+
+  <!-- Typography: Google Fonts Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       FULL-SITE GTA SAN ANDREAS THEMED ATMOSPHERIC BACKDROP
+       ======================================================================== -->
+  <div class="site-background" aria-hidden="true">
+    <div class="site-background-image"></div>
+    <div class="site-background-overlay"></div>
+    <div class="site-background-vignette"></div>
+  </div>
+
+  <!-- ========================================================================
+       FLOATING PILL NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="nav-pill-wrapper">
+      <div class="nav-pill">
+        <a href="#beranda" class="nav-brand" aria-label="KUYLAND Beranda">
+          <span>KUYLAND</span>
+          <span class="nav-brand-dot"></span>
+        </a>
+
+        <!-- Desktop Navigation Links & Mobile Dropdown -->
+        <nav class="nav-menu" id="nav-menu-dropdown" role="navigation" aria-label="Navigasi Utama">
+          <a href="#beranda" class="nav-link active">Beranda</a>
+          <a href="#tentang" class="nav-link">Tentang</a>
+          <a href="#fitur" class="nav-link">Fitur</a>
+          <a href="#cara-main" class="nav-link">Cara Main</a>
+          <a href="#unduhan" class="nav-link">Unduhan</a>
+          <a href="#server" class="nav-link">Server</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#komunitas" class="nav-link">Komunitas</a>
+          
+          <!-- Mobile CTA inside Dropdown -->
+          <a href="#unduhan" class="btn btn-primary btn-sm mobile-play-btn">
+            Main Sekarang
+          </a>
+        </nav>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          <a href="#unduhan" class="btn btn-primary btn-sm desktop-play-btn">
+            Main Sekarang
+          </a>
+          <button class="nav-toggle-btn" aria-label="Buka Menu Navigasi" aria-expanded="false" aria-controls="nav-menu-dropdown">
+            <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         HERO SECTION (GTA SAN ANDREAS THEMED ATMOSPHERE)
+         ====================================================================== -->
+    <section id="beranda" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-content">
+        <!-- Status Indicator Pill -->
+        <div class="hero-meta-pill">
+          <span class="status-pill">
+            <span class="status-dot"></span>
+            <span data-bind="server-status-label">Server Siap / Online</span>
+          </span>
+          <span style="color: var(--color-text-dim);">|</span>
+          <span style="font-size: 0.8rem; font-weight: 600; color: var(--color-emerald-accent);" data-bind="server-platform">
+            open.mp
+          </span>
+        </div>
+
+        <h1 id="hero-heading" class="hero-title">
+          YOUR STORY.<br>
+          YOUR CITY.<br>
+          <span class="hero-title-accent">YOUR RULES.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Selamat datang di Kuyland Roleplay. Bangun alur cerita karakter Anda, jelajahi ribuan peluang baru, dan rasakan atmosfer San Andreas dalam dunia hidup yang dibentuk oleh komunitas.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="#unduhan" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Unduh Client Game
+          </a>
+
+          <a href="#tentang" class="btn btn-secondary">
+            Jelajahi Server
+          </a>
+        </div>
+
+        <!-- Quick Server IP Copy Bar -->
+        <div class="hero-ip-quickbar glass-panel">
+          <span style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-dim);">IP Server:</span>
+          <span class="hero-ip-text" data-bind="server-ip-full">play.kuyland.id:7777</span>
+          <button type="button" class="hero-ip-copy-btn" data-action="copy-ip" aria-label="Salin IP Server Kuyland">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Salin</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT SECTION
+         ====================================================================== -->
+    <section id="tentang" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Text Content -->
+          <div class="about-text-content">
+            <div>
+              <span class="section-tag">Tentang Kuyland</span>
+              <h2 id="about-heading" class="section-title">
+                Platform Roleplay Modern Tanpa Kompromi
+              </h2>
+            </div>
+
+            <p>
+              KUYLAND adalah server GTA San Andreas Multiplayer generasi baru yang didukung oleh arsitektur open.mp. Kami menghadirkan standar roleplay yang teratur, stabil, dan dinamis di mana setiap keputusan karakter Anda berdampak nyata pada ekosistem kota.
+            </p>
+
+            <p>
+              Dibangun oleh pemain untuk pemain, Kuyland memadukan pengalaman roleplay klasik yang dirindukan dengan performa teknologi multiplayer modern. Baik Anda bermain dari PC performa tinggi maupun smartphone Android, dunia San Andreas hadir mulus tanpa hambatan batasan perangkat.
+            </p>
+
+            <div class="about-features-list">
+              <div class="about-feature-item">
+                <div class="about-feature-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-primary); margin-bottom: 2px;">Ekosistem Roleplay Berkelanjutan</h4>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted);">Aturan roleplay yang seimbang, didukung jajaran staf aktif dan regulasi kota yang adil.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="about-feature-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-primary); margin-bottom: 2px;">Sinkronisasi PC & Android Sejati</h4>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted);">Satu dunia bersama. Pemain PC dan mobile berinteraksi secara real-time dalam satu server.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="about-feature-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-primary); margin-bottom: 2px;">Pembaruan Sistem Berkala</h4>
+                  <p style="font-size: 0.88rem; color: var(--color-text-muted);">Peningkatan fitur berkala, perbaikan bug cepat, serta fitur baru berdasarkan aspirasi komunitas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Glass Panel -->
+          <div class="about-visual-panel">
+            <img src="assets/images/about-visual.svg" alt="Kuyland Citizen ID Card dan Arsitektur open.mp" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SERVER FEATURES SECTION
+         ====================================================================== -->
+    <section id="fitur" class="section" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Fitur Unggulan</span>
+          <h2 id="features-heading" class="section-title">
+            Didesain untuk Pengalaman Roleplay Terbaik
+          </h2>
+          <p class="section-subtitle">
+            Setiap modul sistem dirancang dengan teliti untuk kenyamanan, kedalaman gameplay, dan stabilitas server jangka panjang.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1: Roleplay Imersif -->
+          <article class="glass-panel glass-card-interactive feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Roleplay Imersif</h3>
+            <p class="feature-card-desc">
+              Kembangkan identitas karakter secara mendalam. Masuki faksi penegak hukum, tim medis, bisnis swasta, maupun lingkaran organisasi bawah tanah.
+            </p>
+          </article>
+
+          <!-- Feature 2: Dinamika Ekonomi & Pekerjaan -->
+          <article class="glass-panel glass-card-interactive feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Ekonomi & Pekerjaan Dinamis</h3>
+            <p class="feature-card-desc">
+              Siklus perekonomian yang terkalibrasi dengan baik. Pilihan pekerjaan legal mulai dari logistik, pertambangan, kurir, hingga investasi pasar modal lokal.
+            </p>
+          </article>
+
+          <!-- Feature 3: Kendaraan & Properti -->
+          <article class="glass-panel glass-card-interactive feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Sistem Kendaraan & Properti</h3>
+            <p class="feature-card-desc">
+              Miliki hunian, garasi, serta bangunan bisnis di seluruh penjuru San Andreas. Lengkap dengan modifikasi performa kendaraan dan STNK tersinkronisasi.
+            </p>
+          </article>
+
+          <!-- Feature 4: Voice Chat Spasial -->
+          <article class="glass-panel glass-card-interactive feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Voice Chat 3D Spasial</h3>
+            <p class="feature-card-desc">
+              Dukungan proximity voice in-game dengan efek reverb lingkungan realistis. Komunikasi suara langsung tanpa memerlukan aplikasi pihak ketiga yang rumit.
+            </p>
+          </article>
+
+          <!-- Feature 5: Antarmuka Modern & Bersih -->
+          <article class="glass-panel glass-card-interactive feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Antarmuka Modern (Clean HUD)</h3>
+            <p class="feature-card-desc">
+              Tampilan in-game minimalis tanpa visual yang mengganggu pandangan layar. Didesain elegan dengan font tajam beresolusi tinggi di berbagai rasio monitor.
+            </p>
+          </article>
+
+          <!-- Feature 6: Dukungan Lintas Platform -->
+          <article class="glass-panel glass-card-interactive feature-card">
+            <div class="feature-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Multi-Platform PC & Android</h3>
+            <p class="feature-card-desc">
+              Infrastruktur open.mp yang mengoptimalkan bandwidth dan latensi packet data, memastikan kesetaraan gameplay antara keyboard PC dan touch controls HP.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         HOW TO PLAY SECTION
+         ====================================================================== -->
+    <section id="cara-main" class="section" aria-labelledby="steps-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Panduan Memulai</span>
+          <h2 id="steps-heading" class="section-title">
+            Empat Langkah Menuju Los Santos
+          </h2>
+          <p class="section-subtitle">
+            Hanya membutuhkan beberapa menit untuk mengatur game dan langsung bergabung dengan ribuan warga Kuyland.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <!-- Step 1 -->
+          <div class="glass-panel step-card">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Unduh Client</h3>
+            <p class="step-desc">
+              Pilih Kuyland PC Launcher atau APK Client Android pada Pusat Unduhan sesuai perangkat yang Anda gunakan.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="glass-panel step-card">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Pasang Komponen</h3>
+            <p class="step-desc">
+              Arahkan ke folder instalasi GTA:SA di PC atau izinkan penginstalan APK dan pasang data pack pada ponsel Android Anda.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="glass-panel step-card">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Hubungkan Server</h3>
+            <p class="step-desc">
+              Buka launcher atau masukkan alamat IP server Kuyland: <code style="color: var(--color-emerald-accent); font-family: var(--font-mono);">play.kuyland.id:7777</code> ke daftar server.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="glass-panel step-card">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Mulai Karakter</h3>
+            <p class="step-desc">
+              Gunakan format nama roleplay (Contoh: Nama_Keluarga), ikuti petunjuk tutorial awal di bandara, dan ciptakan kisah Anda.
+            </p>
+          </div>
+        </div>
+
+        <!-- Platform Instructions Info Banner -->
+        <div class="platform-notes-banner">
+          <div class="platform-note-text">
+            <strong>Catatan Pengguna PC:</strong> Pastikan Anda menggunakan salinan game GTA San Andreas v1.0 US Clean tanpa modifikasi berat yang menyebabkan crash.
+          </div>
+          <div class="platform-note-text">
+            <strong>Catatan Pengguna Android:</strong> Diperlukan izin penyimpanan dan koneksi internet stabil untuk proses unduhan data in-game pertama kali.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         DOWNLOAD CENTER SECTION
+         ====================================================================== -->
+    <section id="unduhan" class="section" aria-labelledby="downloads-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Pusat Unduhan</span>
+          <h2 id="downloads-heading" class="section-title">
+            Unduh Client & Plugin Kuyland
+          </h2>
+          <p class="section-subtitle">
+            Seluruh berkas resmi telah dipindai dan diverifikasi keamanannya. Pilih platform Anda untuk melihat berkas instalasi.
+          </p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="tab-container" role="tablist" aria-label="Kategori Unduhan">
+          <button class="tab-btn active" data-tab="pc" role="tab" aria-selected="true" id="tab-pc">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>PC Windows</span>
+          </button>
+
+          <button class="tab-btn" data-tab="android" role="tab" aria-selected="false" id="tab-android">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="18" x2="4" y2="12"></line>
+              <line x1="20" y1="18" x2="20" y2="12"></line>
+              <rect x="7" y="10" width="10" height="12" rx="2"></rect>
+              <path d="M7 9a5 5 0 0 1 10 0"></path>
+              <circle cx="9" cy="6" r="0.75" fill="currentColor"></circle>
+              <circle cx="15" cy="6" r="0.75" fill="currentColor"></circle>
+              <line x1="8" y1="2" x2="10" y2="4"></line>
+              <line x1="16" y1="2" x2="14" y2="4"></line>
+            </svg>
+            <span>Android APK</span>
+          </button>
+
+          <button class="tab-btn" data-tab="plugins" role="tab" aria-selected="false" id="tab-plugins">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"></path>
+              <polyline points="21 16 21 8 16 4"></polyline>
+            </svg>
+            <span>Plugin & Tambahan</span>
+          </button>
+        </div>
+
+        <!-- Dynamic Downloads Container Rendered via JS -->
+        <div id="downloads-container" class="downloads-grid" aria-live="polite">
+          <!-- Diisi secara dinamis dari js/downloads.js & js/config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SERVER INFORMATION DASHBOARD
+         ====================================================================== -->
+    <section id="server" class="section" aria-labelledby="server-heading">
+      <div class="container">
+        <div class="glass-panel-elevated server-dashboard">
+          <div class="dashboard-header">
+            <div class="dashboard-title-box">
+              <span class="tag-badge emerald" style="margin-bottom: 6px;">Server Status</span>
+              <h3 id="server-heading">Pusat Informasi Server</h3>
+              <p>Detail koneksi teknis server resmi Kuyland open.mp.</p>
+            </div>
+            
+            <div class="status-pill">
+              <span class="status-dot"></span>
+              <span data-bind="server-status-label">Server Siap / Online</span>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <!-- Stat 1 -->
+            <div class="dashboard-stat-card">
+              <span class="dashboard-stat-label">Nama Server</span>
+              <div class="dashboard-stat-value" data-bind="server-name">Kuyland Roleplay</div>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="dashboard-stat-card">
+              <span class="dashboard-stat-label">Arsitektur & Core</span>
+              <div class="dashboard-stat-value" data-bind="server-platform">open.mp</div>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="dashboard-stat-card">
+              <span class="dashboard-stat-label">Dukungan Platform</span>
+              <div class="dashboard-stat-value" data-bind="server-devices">PC & Android</div>
+            </div>
+
+            <!-- Full Width IP Action Box -->
+            <div class="dashboard-ip-box">
+              <div>
+                <span class="dashboard-stat-label" style="display: block; margin-bottom: 2px;">Alamat IP Server Resmi</span>
+                <span class="dashboard-ip-text" data-bind="server-ip-full">play.kuyland.id:7777</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-action="copy-ip">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Salin Alamat IP</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         COMMUNITY SECTION
+         ====================================================================== -->
+    <section id="komunitas" class="section" aria-labelledby="community-heading">
+      <div class="container">
+        <div class="glass-panel-elevated community-card">
+          <div class="community-icon-banner">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </div>
+
+          <h2 id="community-heading" class="community-title">
+            Bergabung dengan Komunitas Resmi Kami
+          </h2>
+
+          <p class="community-desc">
+            Dapatkan pengumuman pembaruan tercepat, ikuti kegiatan komunitas mingguan, diskusikan alur roleplay, dan hubungi staf bantuan teknis melalui server Discord Kuyland.
+          </p>
+
+          <div class="community-btn-group">
+            <a href="#" class="btn btn-primary" data-bind="discord-url" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              Gabung Discord Kuyland
+            </a>
+            <a href="#faq" class="btn btn-secondary">
+              Pertanyaan Umum
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         FAQ SECTION
+         ====================================================================== -->
+    <section id="faq" class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FAQ</span>
+          <h2 id="faq-heading" class="section-title">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <p class="section-subtitle">
+            Jawaban cepat untuk hal-hal yang paling sering ditanyakan oleh pemain baru.
+          </p>
+        </div>
+
+        <div class="faq-container" id="faq-accordion-list">
+          <!-- Diisi secara dinamis dari js/main.js & siteConfig.faq -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <a href="#beranda" class="nav-brand" style="margin-bottom: 4px;">
+            <span>KUYLAND</span>
+            <span class="nav-brand-dot"></span>
+          </a>
+          <p class="footer-desc">
+            Komunitas dan server game GTA San Andreas Multiplayer modern bertenaga open.mp. Menghubungkan pemain PC dan Android dalam satu dunia roleplay imersif.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#fitur">Fitur Server</a></li>
+            <li><a href="#cara-main">Cara Bermain</a></li>
+          </ul>
+        </div>
+
+        <!-- Download Links -->
+        <div>
+          <h4 class="footer-col-title">Pusat Unduhan</h4>
+          <ul class="footer-links">
+            <li><a href="#unduhan">Kuyland PC Launcher</a></li>
+            <li><a href="#unduhan">Client open.mp PC</a></li>
+            <li><a href="#unduhan">Kuyland Android APK</a></li>
+            <li><a href="#unduhan">Spatial Voice Plugin</a></li>
+          </ul>
+        </div>
+
+        <!-- Community Links -->
+        <div>
+          <h4 class="footer-col-title">Komunitas</h4>
+          <ul class="footer-links">
+            <li><a href="#" data-bind="discord-url">Discord Resmi</a></li>
+            <li><a href="#server">Status Server</a></li>
+            <li><a href="#faq">Bantuan & FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Legal & Disclaimer -->
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year">2026</span> KUYLAND Roleplay. Seluruh hak cipta dilindungi.
+        </p>
+        <p class="footer-disclaimer">
+          <strong>Pemberitahuan Penafian (Disclaimer):</strong> KUYLAND adalah proyek modifikasi multipemain komunitas pihak ketiga yang beroperasi secara independen menggunakan arsitektur open.mp. KUYLAND tidak berafiliasi, disponsori, didukung, maupun berhubungan dengan Rockstar Games, Take-Two Interactive, atau pemegang hak cipta Grand Theft Auto lainnya. Seluruh merek dagang dan aset intelektual terkait GTA San Andreas adalah milik sah dari Rockstar Games / Take-Two Interactive.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Feedback -->
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span class="toast-message">Pesan notifikasi</span>
+  </div>
+
+  <!-- Scripts: Vanilla ES Modules -->
+  <script type="module" src="js/main.js"></script>
+  <script>
+    // Set dynamic current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
